@@ -1,0 +1,70 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: HIL Clutch_Act
+
+
+BO_ 2582642451 Actuator_Feedback: 8 Clutch_Act
+ SG_ Saturation_Flag : 36|1@1- (1,0) [0|0] ""  HIL
+ SG_ Parameter_Flag : 35|1@1- (1,0) [0|0] ""  HIL
+ SG_ Overload_Flag : 33|1@1- (1,0) [0|0] ""  HIL
+ SG_ Fatal_Error_Flag : 37|1@1- (1,0) [0|0] ""  HIL
+ SG_ Factory_Use : 38|18@1- (1,0) [0|0] ""  HIL
+ SG_ Backdrive_Flag : 34|1@1- (1,0) [0|0] ""  HIL
+ SG_ Motion_Flag : 32|1@1- (1,0) [0|0] ""  HIL
+ SG_ Temperature_Error : 30|2@1- (1,0) [0|0] ""  HIL
+ SG_ Voltage_Error : 28|2@1- (1,0) [0|0] ""  HIL
+ SG_ Running_Speed : 23|5@1- (5,0) [0|0] ""  HIL
+ SG_ Measured_Current : 14|9@1- (0.1,0) [0|0] ""  HIL
+ SG_ Measured_Position : 0|14@1- (0.1,0) [0|0] ""  HIL
+
+BO_ 2163151870 Actuator_Control: 8 HIL
+ SG_ Motion_Enable : 28|1@1- (1,0) [0|0] ""  Clutch_Act
+ SG_ Factory_Use : 29|35@1- (1,0) [0|0] ""  Clutch_Act
+ SG_ Speed_Command : 23|5@1- (1,0) [0|0] ""  Clutch_Act
+ SG_ Current_Limit : 14|9@1- (0.1,0) [0|0] ""  Clutch_Act
+ SG_ Position_Command : 0|14@1- (0.1,0) [0|0] ""  Clutch_Act
+
+
+
+CM_ SG_ 2582642451 Running_Speed "[% DC]";
+CM_ SG_ 2582642451 Measured_Current "[A]";
+CM_ SG_ 2582642451 Measured_Position "[mm]";
+CM_ SG_ 2163151870 Current_Limit "[A]";
+CM_ SG_ 2163151870 Position_Command "[mm]
+";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "";
+
